@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+
+  body {
+    font-family: "Nunito Variable", sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@theme {
+  /* FONT FAMILY */
+  --font-nunito: "Nunito", sans-serif;
+
+  /* BREAK POINTS */
+  --breakpoint-3xl: 120rem;
+
+  /* COLORS PRIMARY */
+  --color-primary: #f1ba1b;
+
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+  /* ... */
+}
+
+/* 
+      
+        
