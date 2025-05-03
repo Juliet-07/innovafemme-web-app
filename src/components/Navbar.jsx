@@ -103,7 +103,7 @@ const Navbar = () => {
             About Us
           </NavLink>
           <NavLink
-            to="/our-toolkit"
+            to="/services"
             style={activeStyle}
             className="p-2 hover:font-primaryBold bubble-hover"
             onClick={() => setNav(false)}
