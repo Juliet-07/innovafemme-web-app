@@ -28,6 +28,23 @@
   /* ... */
 }
 
-/* 
-      
-        
+.bubble-hover {
+  position: relative;
+}
+
+.bubble-hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  width: 10px;
+  height: 10px;
+  background-color: #f1ba1b;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.bubble-hover:hover::after {
+  transform: translateX(-50%) scale(1);
+}

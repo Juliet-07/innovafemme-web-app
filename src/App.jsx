@@ -1,16 +1,25 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+// import About from "./pages/About";
+// import Toolkit from "./pages/Toolkit";
+// import Skillseed from "./pages/Skillseed";
+// import Contact from "./pages/Contact";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const AppRoute = () => {
   return (
     <>
-      <h1 class="text-7xl font-bold underline text-primary font-nunito">Hello world!</h1>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/about-us" element={<About />} /> */}
+          {/* <Route path="/our-toolkit" element={<Toolkit />} /> */}
+          {/* <Route path="/skillseed" element={<Skillseed />} /> */}
+          {/* <Route path="/contact-us" element={<Contact />} /> */}
+        </Routes>
+      </Layout>
     </>
   );
-}
+};
 
-export default App;
+export default AppRoute;
