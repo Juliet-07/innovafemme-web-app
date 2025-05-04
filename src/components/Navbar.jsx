@@ -47,18 +47,22 @@ const Navbar = () => {
         >
           Our Services
         </NavLink>
-        <div className="hover:font-primaryBold bubble-hover cursor-pointer flex items-center gap-2">
-          <span className="bg-[#F1BA1B] rounded-full w-8 h-8 flex items-center justify-center">
-            <AiOutlineMail size={20} color="white" />
-          </span>
-          Email
-        </div>
-        <div className="hover:font-primaryBold bubble-hover cursor-pointer flex items-center gap-2">
-          <span className="bg-[#33A43B] rounded-full w-8 h-8 flex items-center justify-center">
-            <MdOutlineLocalPhone size={20} color="white" />
-          </span>
-          Call
-        </div>
+        <a href="mailto:innovafemmetechsolutions@gmail.com" target="_blank">
+          <div className="hover:font-primaryBold bubble-hover cursor-pointer flex items-center gap-2">
+            <span className="bg-[#F1BA1B] rounded-full w-8 h-8 flex items-center justify-center">
+              <AiOutlineMail size={20} color="white" />
+            </span>
+            Email
+          </div>
+        </a>
+        <a href="https://wa.me/+250794424387" target="_blank">
+          <div className="hover:font-primaryBold bubble-hover cursor-pointer flex items-center gap-2">
+            <span className="bg-[#33A43B] rounded-full w-8 h-8 flex items-center justify-center">
+              <MdOutlineLocalPhone size={20} color="white" />
+            </span>
+            Call
+          </div>
+        </a>
       </nav>
 
       <Link to="/contact-us" className="hidden md:block">
@@ -110,18 +114,22 @@ const Navbar = () => {
           >
             Our Services
           </NavLink>
-          <div className="p-2 hover:font-primaryBold bubble-hover cursor-pointer flex items-center gap-2">
-            <span className="bg-[#F1BA1B] rounded-full w-8 h-8 flex items-center justify-center">
-              <AiOutlineMail size={20} color="white" />
-            </span>
-            Email
-          </div>
-          <div className="p-2 hover:font-primaryBold bubble-hover cursor-pointer flex items-center gap-2">
-            <span className="bg-[#33A43B] rounded-full w-8 h-8 flex items-center justify-center">
-              <MdOutlineLocalPhone size={20} color="white" />
-            </span>
-            Call
-          </div>
+          <a href="mailto:innovafemmetechsolutions@gmail.com" target="_blank">
+            <div className="p-2 hover:font-primaryBold bubble-hover cursor-pointer flex items-center gap-2">
+              <span className="bg-[#F1BA1B] rounded-full w-8 h-8 flex items-center justify-center">
+                <AiOutlineMail size={20} color="white" />
+              </span>
+              Email
+            </div>
+          </a>
+          <a href="https://wa.me/+250794424387" target="_blank">
+            <div className="p-2 hover:font-primaryBold bubble-hover cursor-pointer flex items-center gap-2">
+              <span className="bg-[#33A43B] rounded-full w-8 h-8 flex items-center justify-center">
+                <MdOutlineLocalPhone size={20} color="white" />
+              </span>
+              Call
+            </div>
+          </a>
 
           <Link
             to="/contact-us"
