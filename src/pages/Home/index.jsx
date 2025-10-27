@@ -11,31 +11,31 @@ const images = [image1, image2, image3];
 const whyChooseUs = [
   {
     sn: "1",
-    title: "Client-Centric Approach:",
+    title: "Client-Centric Approach: ",
     message:
       "We prioritize understanding and addressing the unique needs of each client.",
   },
   {
     sn: "2",
-    title: "Proven Expertise:",
+    title: "Proven Expertise: ",
     message:
       "Our team brings years of experience in software engineering and consultancy.",
   },
   {
     sn: "3",
-    title: "Social Impact:",
+    title: "Social Impact: ",
     message:
       "By choosing InnovaFemme, you support initiatives that empower young women in tech.",
   },
   {
     sn: "4",
-    title: "Cutting-Edge Solutions:",
+    title: "Cutting-Edge Solutions: ",
     message:
       "We leverage the latest technologies to deliver innovative and future-proof solutions.",
   },
   {
     sn: "5",
-    title: "Scalability & Growth:",
+    title: "Scalability & Growth: ",
     message:
       "Our solutions are designed to grow with your business, ensuring long-term value.",
   },
@@ -109,16 +109,15 @@ const Home = () => {
           Why Choose Us
         </div>
         <div className="w-full flex flex-col gap-4 md:flex-row items-stretch justify-between 2xl:justify-around">
-          <div>
-            <img src={Choose} />
-          </div>
+          <img src={Choose} />
+
           <div className="md:w-[40%] 2xl:w-[30%] space-y-4">
             {whyChooseUs.map((choose, index) => (
-              <div key={index} className="w-full grid grid-cols-2">
+              <div key={index} className="w-full flex md:grid items-center gap-4">
                 <div className="w-[60px] h-[60px] bg-gradient-to-b from-[#000000] to-[#666666] text-center text-white flex items-center justify-center font-bold text-2xl md:text-3xl rounded-full">
                   {choose.sn}
                 </div>
-                <div className="space-x-1">
+                <div className="w-full">
                   <span className="font-bold text-lg md:text-xl">
                     {choose.title}
                   </span>
@@ -137,6 +136,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* About Us */}
       <div className="w-full p-4 md:p-10 font-nunito">
         <div className="font-bold text-2xl md:text-4xl my-4 py-2 text-center underline decoration-[#F1BA1B]">
           About Us
